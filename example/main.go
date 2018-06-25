@@ -1,7 +1,7 @@
 package main
 
 import (
-	"dityword/dityword"
+	"github.com/progtesttest/dityword/dityword"
 	"os"
 	"path"
 	"fmt"
@@ -25,17 +25,6 @@ func check(src string) bool  {
 }
 
 func main()  {
-
-//	aa := "存在select"
-//	check(aa)
-
-//	bb := "存在"
-//	check(bb)
-
-//	cc := "select"
-//	check(cc)
-	//bb := "存在"
-	//fmt.Println("bbbbb",re.MatchString(bb))  //打印出false。
 
 	//1读取配置文件连
 	cfgpath, _ := os.Getwd()
@@ -78,39 +67,3 @@ func main()  {
 
 
 }
-
-/*
-testBytes := []byte{0xC4, 0xE3, 0xBA, 0xC3, 0xA3, 0xAC, 0xCA, 0xC0, 0xBD, 0xE7, 0xA3, 0xA1}
-
-    var testStr string
-
-    utfStr := "你好，世界！"
-
-    var dec mahonia.Decoder
-
-    var enc mahonia.Encoder
-
-
-
-    testStr = string(testBytes)
-
-
-
-    dec = mahonia.NewDecoder("gbk")
-
-    if ret, ok := dec.ConvertStringOK(testStr); ok {
-
-        fmt.Println("GBK to UTF-8: ", ret, " bytes:", testBytes)
-
-    }
-
-
-
-    enc = mahonia.NewEncoder("gbk")
-
-    if ret, ok := enc.ConvertStringOK(utfStr); ok {
-
-        fmt.Println("UTF-8 to GBK: ", ret, " bytes: ", []byte(ret))
-
-    }
- */
